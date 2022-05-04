@@ -100,9 +100,9 @@ class Bot(Client):
                     "\nBot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
                 )
                 sys.exit()
-        if FORCE_SUB_CHANNEL2:
+        if FORCE_SUB_CHANNEL3:
             try:
-                link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL2)
+                link = await self.export_chat_invite_link(FORCE_SUB_CHANNEL3)
                 self.invitelink5 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
